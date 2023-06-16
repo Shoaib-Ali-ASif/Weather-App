@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="./java/app.js"></script>
+</head>
+<body>
+    <div class="date"></div>
+    <form>
+        <input type="text" id="countryName" value="Islamabad">
+    </form>
+    <div class="container">
+        <div class="temp">
+            <span class="mainTemp"></span>
+           <div class="temp__unit" onclick="changeUnits()"  data-celsius="true"></div> 
+        </div>
+        <div class="desc">MIST</div>
+       <div class="detail_Desc">
+<div class="icons_Disc">
+    <img  class="icon" src="./image/pressure.svg" alt="" srcset="">
+    <div id="pressure" class="details__num"></div>
+</div>
+<div class="icons_Disc">
+    <img class="icon center" src="./image/humidity.svg" alt="" srcset="">
+    <div id="humidity" class="details__num"></div>
+</div>
+<div class="icons_Disc">
+    <img class="icon" src="./image/wind.svg" alt="" srcset="">
+    <div id="wind" class="details__num"></div>
+</div>
+       </div>
+       <img src="" alt="" id="weather-icon" />
+    </div>
+</body>
+</html>
